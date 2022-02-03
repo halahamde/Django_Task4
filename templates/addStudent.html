@@ -1,0 +1,17 @@
+{%extends 'navbar.html'%}
+{% load static %}
+{%block content%}
+<div class="text-center">
+    <h2>Add New Student!</h2>
+    <form method="post">
+        <div class="container bg-light">
+            {%csrf_token%}
+            <br><br>
+            {{form}}
+            <br><br>
+            <button type="submit" class="btn btn-success">Add</button>
+            <br><br>
+        </div>
+    </form>
+</div>
+{%endblock%}
